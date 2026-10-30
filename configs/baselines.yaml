@@ -1,0 +1,10 @@
+greedy: {epsilon: 1.0e-6}
+ortools:
+  time_limits: [1, 5, 30]
+  distance_scale: 1000
+milp:
+  max_n: 20
+  time_limit: 300
+ga:
+  population: 100
+  generations: 200

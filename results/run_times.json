@@ -1,0 +1,47 @@
+{
+  "smoke": {
+    "methods": [
+      "greedy",
+      "lawnmower",
+      "ortools_1s",
+      "ortools_5s",
+      "ortools_30s"
+    ],
+    "procs": 11,
+    "seconds": 31.5
+  },
+  "small_test": {
+    "methods": [
+      "greedy",
+      "lawnmower",
+      "ortools_1s",
+      "ortools_5s",
+      "ortools_30s"
+    ],
+    "procs": 11,
+    "seconds": 67.9
+  },
+  "test": {
+    "methods": [
+      "greedy",
+      "lawnmower",
+      "ortools_1s",
+      "ortools_5s",
+      "ortools_30s"
+    ],
+    "procs": 11,
+    "seconds": 332.7
+  },
+  "test_small_n": {
+    "methods": [
+      "greedy",
+      "lawnmower",
+      "ortools_1s",
+      "ortools_5s",
+      "ortools_30s",
+      "milp"
+    ],
+    "procs": 11,
+    "seconds": 746.2
+  }
+}

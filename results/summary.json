@@ -1,0 +1,67 @@
+{
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_cores": 12,
+    "os": "Windows-10-10.0.26200-SP0"
+  },
+  "python": "3.10.11",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "shapely": "2.1.2",
+    "networkx": "3.4.2",
+    "ortools": "9.9.3963",
+    "pulp": "3.3.2",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9"
+  },
+  "git_commit": null,
+  "run_times_s": {
+    "smoke": {
+      "methods": [
+        "greedy",
+        "lawnmower",
+        "ortools_1s",
+        "ortools_5s",
+        "ortools_30s"
+      ],
+      "procs": 11,
+      "seconds": 31.5
+    },
+    "small_test": {
+      "methods": [
+        "greedy",
+        "lawnmower",
+        "ortools_1s",
+        "ortools_5s",
+        "ortools_30s"
+      ],
+      "procs": 11,
+      "seconds": 67.9
+    },
+    "test": {
+      "methods": [
+        "greedy",
+        "lawnmower",
+        "ortools_1s",
+        "ortools_5s",
+        "ortools_30s"
+      ],
+      "procs": 11,
+      "seconds": 332.7
+    },
+    "test_small_n": {
+      "methods": [
+        "greedy",
+        "lawnmower",
+        "ortools_1s",
+        "ortools_5s",
+        "ortools_30s",
+        "milp"
+      ],
+      "procs": 11,
+      "seconds": 746.2
+    }
+  },
+  "total_run_time_s": 1178.3
+}
