@@ -22,3 +22,4 @@
 - 2026-10-30: 'smoke' excludes MILP (300 s per instance would break the <1 min target); MILP is run on test_small_n only. Makefile smoke target updated.
 - 2026-10-30: Routes are not stored in the result CSVs, so plots re-solve greedy, lawnmower and ortools_5s on the plotted instances; plot titles show the CR of that re-solve (OR-Tools may differ slightly from the CSV because it is time-limited).
 - 2026-10-31: results/raw and results/plots are tracked in git (small, and they are the evidence for the README tables); this supersedes the earlier note that ignored them.
+- 2026-10-31: notebooks/pilot_demo.ipynb added as the pilot demonstration (classical methods only until the GNN exists). src/eval/plots.py now selects the Agg backend only inside main(), so the notebook can show figures inline.

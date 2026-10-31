@@ -27,6 +27,7 @@ as the plain command. The Makefile targets wrap exactly these commands.
 | Smoke run | `python -m src.baselines.run_all --split smoke --methods greedy,lawnmower,ortools_1s,ortools_5s,ortools_30s` (`make smoke`) |
 | Baselines | `python -m src.baselines.run_all --split <small_test\|test\|test_small_n> --methods all` (`make baselines`) |
 | Tables and plots | `python -m src.eval.benchmark --all` then `python -m src.eval.plots --split <split>` (`make tables`) |
+| Pilot demo | open `notebooks/pilot_demo.ipynb` (loads one instance, runs lawnmower, greedy and OR-Tools 5 s, shows metrics and routes) |
 
 `run_all` skips the MILP when N > 20. Instances run in parallel, one process per core minus one.
 

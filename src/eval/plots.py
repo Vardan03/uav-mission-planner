@@ -5,16 +5,14 @@ import argparse
 from pathlib import Path
 
 import matplotlib
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Polygon as MplPolygon
 
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
-import numpy as np  # noqa: E402
-from matplotlib.patches import Polygon as MplPolygon  # noqa: E402
-
-from src.baselines import greedy, lawnmower, ortools_top  # noqa: E402
-from src.data_gen import geometry  # noqa: E402
-from src.data_gen.instance import Instance, load_instance  # noqa: E402
-from src.eval import metrics  # noqa: E402
+from src.baselines import greedy, lawnmower, ortools_top
+from src.data_gen import geometry
+from src.data_gen.instance import Instance, load_instance
+from src.eval import metrics
 
 COLOURS = ["tab:blue", "tab:orange", "tab:green", "tab:red", "tab:purple"]
 # Routes are not stored in the CSVs, so the plotted methods are solved again here.
@@ -70,6 +68,7 @@ def main() -> None:
     parser.add_argument("--instances", default="data/instances")
     parser.add_argument("--out", default="results/plots")
     args = parser.parse_args()
+    matplotlib.use("Agg")  # the CLI only writes files; notebooks keep their own backend
     seen = set()
     for path in sorted(Path(args.instances, args.split).glob("*.json")):
         inst = load_instance(path)
