@@ -3,7 +3,7 @@
 Instance generator, NFZ-aware distances, feasibility checker and classical baselines
 (greedy, lawnmower, OR-Tools, exact MILP) for the multi-depot Team Orienteering Problem
 with no-fly zones. The neural solver comes later. See `CLAUDE.md` for the full spec and
-`docs/decisions.md` for every non-obvious choice.
+`docs/decisions.md` for every non-obvious choice.  
 
 ## Setup
 
